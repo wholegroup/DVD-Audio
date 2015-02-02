@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DVD-Audio", "DVD-Audio.vcxproj", "{8994567C-4B53-495A-9961-76E293F0AA62}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AudioDecoder", "AudioDecoder.vcxproj", "{5706DE08-277F-471D-BD85-0C62A084ED6E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GrabAudioCD", "GrabAudioCD.vcxproj", "{7A70DB35-9065-46F1-AD6B-400E203DEF10}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DVDAudioISO", "DVDAudioISO.vcxproj", "{3D2A0742-FF2E-464C-B73E-31346AD2F7F4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BurnDVDISO", "BurnDVDISO.vcxproj", "{A9037728-642D-4F5B-8AAD-CA6A1767289E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8994567C-4B53-495A-9961-76E293F0AA62}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8994567C-4B53-495A-9961-76E293F0AA62}.Debug|Win32.Build.0 = Debug|Win32
+		{8994567C-4B53-495A-9961-76E293F0AA62}.Release|Win32.ActiveCfg = Release|Win32
+		{8994567C-4B53-495A-9961-76E293F0AA62}.Release|Win32.Build.0 = Release|Win32
+		{5706DE08-277F-471D-BD85-0C62A084ED6E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5706DE08-277F-471D-BD85-0C62A084ED6E}.Debug|Win32.Build.0 = Debug|Win32
+		{5706DE08-277F-471D-BD85-0C62A084ED6E}.Release|Win32.ActiveCfg = Release|Win32
+		{5706DE08-277F-471D-BD85-0C62A084ED6E}.Release|Win32.Build.0 = Release|Win32
+		{7A70DB35-9065-46F1-AD6B-400E203DEF10}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7A70DB35-9065-46F1-AD6B-400E203DEF10}.Debug|Win32.Build.0 = Debug|Win32
+		{7A70DB35-9065-46F1-AD6B-400E203DEF10}.Release|Win32.ActiveCfg = Release|Win32
+		{7A70DB35-9065-46F1-AD6B-400E203DEF10}.Release|Win32.Build.0 = Release|Win32
+		{3D2A0742-FF2E-464C-B73E-31346AD2F7F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3D2A0742-FF2E-464C-B73E-31346AD2F7F4}.Debug|Win32.Build.0 = Debug|Win32
+		{3D2A0742-FF2E-464C-B73E-31346AD2F7F4}.Release|Win32.ActiveCfg = Release|Win32
+		{3D2A0742-FF2E-464C-B73E-31346AD2F7F4}.Release|Win32.Build.0 = Release|Win32
+		{A9037728-642D-4F5B-8AAD-CA6A1767289E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A9037728-642D-4F5B-8AAD-CA6A1767289E}.Debug|Win32.Build.0 = Debug|Win32
+		{A9037728-642D-4F5B-8AAD-CA6A1767289E}.Release|Win32.ActiveCfg = Release|Win32
+		{A9037728-642D-4F5B-8AAD-CA6A1767289E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

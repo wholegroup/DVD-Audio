@@ -1,0 +1,491 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DVD-Audio.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\AudioSixPack_Release.ico"
+IDI_ICONCD              ICON                    "res\\CD.ico"
+IDI_ICONDVDR            ICON                    "res\\DVDR.ico"
+IDI_ICONMUSIC           ICON                    "res\\music.ico"
+IDI_PLAYERBACK          ICON                    "res\\player\\back.ico"
+IDI_PLAYERFORWARD       ICON                    "res\\player\\forward.ico"
+IDI_PLAYERNEXT          ICON                    "res\\player\\next.ico"
+IDI_PLAYEROPEN          ICON                    "res\\player\\open.ico"
+IDI_PLAYERPLAY          ICON                    "res\\player\\play.ico"
+IDI_PLAYERPREV          ICON                    "res\\player\\prev.ico"
+IDI_PLAYERSTOP          ICON                    "res\\player\\stop.ico"
+IDI_TOOLBARNEW          ICON                    "res\\toolbar\\New.ico"
+IDI_TOOLBARGRAB         ICON                    "res\\toolbar\\Grabbing.ico"
+IDI_TOOLBARDELETEGROUP  ICON                    "res\\toolbar\\DeleteGroup.ico"
+IDI_TOOLBARBURN         ICON                    "res\\toolbar\\Burn.ico"
+IDI_TOOLBARHELP         ICON                    "res\\toolbar\\Help.ico"
+IDI_TOOLBARABOUT        ICON                    "res\\toolbar\\About.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SIXCDONDVD DIALOGEX 0, 0, 405, 284
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_INDICATORSIZE,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,0,261,328,22,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_FORMATDVD,333,260,71,61,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Groups",IDC_FRAMEGROUPS,0,4,116,254
+    CONTROL         "",IDC_TREEGROUPS,"SysTreeView32",TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | TVS_NOSCROLL | WS_BORDER | WS_TABSTOP,5,12,106,242
+    GROUPBOX        "Tracks",IDC_FRAMETRACKS,121,4,171,254
+    CONTROL         "",IDC_TREETRACKS,"SysTreeView32",TVS_HASLINES | TVS_EDITLABELS | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | TVS_NOSCROLL | WS_BORDER | WS_TABSTOP,127,12,160,241
+    GROUPBOX        "Step one:",IDC_FRAMESTEP1,296,4,109,101
+    PUSHBUTTON      "Grab CD-Audio ",IDC_BUTTONGRABCDA,306,81,89,19
+    GROUPBOX        "Step two:",IDC_FRAMESTEP2,296,107,109,102
+    PUSHBUTTON      "Burn DVD-Audio",IDC_BUTTONBURN,306,185,89,19
+    LTEXT           "First   of  all  select  CD-Audio disks  from which you want to create   DVD-Audio   disk  and grab them.",IDC_STATICSTEPONE,303,19,95,60
+    LTEXT           "When  all  CD-Audio disks  will be  grabbed,  check  up  once again         correctness        of structure          of         future DVD-Audio and burn an image on empty DVD disk.",IDC_STATICSTEPTWO,303,123,95,60
+END
+
+IDD_GRABAUDIO DIALOGEX 0, 0, 415, 250
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0xCC
+BEGIN
+    CONTROL         "",IDC_LISTTRACK,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_TABSTOP,5,16,403,136,WS_EX_CLIENTEDGE
+    CTEXT           "16 Tracks, 78:10:15 (789 Mb)",IDC_STATICSELECT,131,157,161,17,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    LTEXT           "Total:",IDC_STATICTOTAL,108,162,20,8
+    GROUPBOX        "Track list",IDC_STATICTRACKLIST,0,4,415,176
+    PUSHBUTTON      "Select All",IDC_BUTTONSELECTALL,330,157,79,18
+    PUSHBUTTON      "Refresh",IDC_BUTTONREFRESH,5,157,79,18
+    GROUPBOX        "Audio player controls",IDC_STATICPLAYER,0,181,324,63
+    PUSHBUTTON      "play",IDC_BUTTONPLAY,145,219,23,21
+    PUSHBUTTON      "open",IDC_BUTTONOPEN,172,219,23,21
+    PUSHBUTTON      "stop",IDC_BUTTONSTOP,117,219,23,21
+    PUSHBUTTON      "next",IDC_BUTTONNEXT,89,219,23,21
+    PUSHBUTTON      "forw",IDC_BUTTONFORWARD,61,219,23,21
+    PUSHBUTTON      "back",IDC_BUTTONBACK,33,219,23,21
+    PUSHBUTTON      "prev",IDC_BUTTONPREV,5,219,23,21
+    CONTROL         "",IDC_PROGRESSPOSITION,"msctls_progress32",PBS_SMOOTH | WS_BORDER,5,204,190,13
+    LTEXT           "Position:",IDC_STATICPOSITION,6,192,28,8
+    CONTROL         "",IDC_SLIDERPOSITION,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,32,193,288,9
+    CTEXT           "Static",IDC_STATICINFO,202,204,115,13,0,WS_EX_STATICEDGE
+    LTEXT           "Volume:",IDC_STATICVOLUME,203,219,26,8
+    CONTROL         "",IDC_SLIDERVOLUME,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,199,229,121,9
+    PUSHBUTTON      "GO",IDC_BUTTONGO,330,184,79,38
+    PUSHBUTTON      "Close",IDC_BUTTONCLOSE,330,226,79,18
+END
+
+IDD_GRABPROGRESS DIALOGEX 0, 0, 392, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Progress"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,335,59,50,14
+    CONTROL         "",IDC_PROGRESSTOTAL,"msctls_progress32",PBS_SMOOTH | WS_BORDER,58,27,327,9
+    CONTROL         "",IDC_PROGRESSCURRENT,"msctls_progress32",PBS_SMOOTH | WS_BORDER,58,43,327,9
+    LTEXT           "Total:",IDC_STATIC,10,27,20,8
+    LTEXT           "Current track:",IDC_STATIC,10,43,46,8
+    LTEXT           "Name:",IDC_STATIC,10,12,22,8
+    LTEXT           "Track 01",IDC_STATICNAME,58,12,327,8
+END
+
+IDD_BURNDVDA DIALOGEX 0, 0, 425, 239
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Compilation",IDC_FRAMECOMPILATION,0,4,425,182
+    CONTROL         "",IDC_LISTCOMPILATION,"SysListView32",LVS_REPORT | LVS_AUTOARRANGE | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,12,416,169
+    GROUPBOX        "Status",IDC_FRAMESTATUS,0,187,425,27
+    CONTROL         "",IDC_PROGRESSTATUS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,6,196,413,13
+    PUSHBUTTON      "Close",IDC_BUTTONCLOSE,347,219,72,15
+END
+
+IDD_SETREADSPEED DIALOGEX 0, 0, 115, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Audio CD grabbing speed"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,6,26,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,58,26,50,14
+    LTEXT           "Set the speed:",IDC_STATIC,7,9,48,8
+    COMBOBOX        IDC_COMBO_SPEED_READ,57,7,51,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SETWRITESPEED DIALOGEX 0, 0, 115, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DVD-Audio writing speed"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,6,26,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,58,26,50,14
+    LTEXT           "Set the speed:",IDC_STATIC,7,9,48,8
+    COMBOBOX        IDC_COMBO_SPEED_WRITE,57,7,51,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 307, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DVD-Audio"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CTEXT           "Programm Name",IDC_STATICABOUT03,139,5,168,18,SS_NOPREFIX
+    CTEXT           "Copyright © 2004 - 2006 Whole Group",IDC_STATICABOUT04,139,22,168,10
+    DEFPUSHBUTTON   "Close",IDOK,253,113,50,16,WS_GROUP
+    CTEXT           "1.0.0.875 (x86) - March, 13",IDC_STATICABOUT05,139,33,168,10
+    CTEXT           "Rip and transfer up to 6 CDs on one DVD-Audio disc",IDC_STATICABOUT06,141,44,159,19
+END
+
+IDD_TOOLBAR DIALOGEX 0, 0, 488, 25
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBODRIVE,113,10,156,102,CBS_DROPDOWNLIST | CBS_UPPERCASE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "New",IDC_TOOLBARNEW,"Button",BS_OWNERDRAW | WS_TABSTOP,1,2,24,22
+    LTEXT           "Select working drive:",IDC_STATIC,114,1,68,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,108,1,1,24,WS_EX_STATICEDGE
+    PUSHBUTTON      "Grab",IDC_TOOLBARGRAB,27,2,24,22
+    PUSHBUTTON      "Delete Group",IDC_TOOLBARDELETEGROUP,53,2,24,22,BS_MULTILINE
+    PUSHBUTTON      "Burn",IDC_TOOLBARBURN,79,2,25,22
+    PUSHBUTTON      "Help",IDC_TOOLBARHELP,277,2,26,22
+    PUSHBUTTON      "About",IDC_TOOLBARABOUT,305,2,25,22
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,273,1,1,24,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SIXCDONDVD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 404
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_GRABPROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_BURNDVDA, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_SETREADSPEED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_SETWRITESPEED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 300
+        TOPMARGIN, 3
+    END
+
+    IDD_TOOLBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 375
+        TOPMARGIN, 1
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SIXCDONDVD DLGINIT
+BEGIN
+    IDC_FORMATDVD, 0x403, 14, 0
+0x5644, 0x3544, 0x2820, 0x3434, 0x3338, 0x424d, 0x0029, 
+    IDC_FORMATDVD, 0x403, 14, 0
+0x5644, 0x3944, 0x2820, 0x3138, 0x3235, 0x424d, 0x0029, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGOTYPE            BITMAP                  "res\\splash.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&DVD-Audio"
+    BEGIN
+        MENUITEM "&New compilation",            IDC_TOOLBARNEW
+        MENUITEM "CD-Audio &ripping",           IDC_TOOLBARGRAB
+        MENUITEM "&Delete group",               IDC_TOOLBARDELETEGROUP
+        MENUITEM "&Burning DVD-Audio",          IDC_TOOLBARBURN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+X",                ID_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents\tF1",               IDC_TOOLBARHELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "X",            ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+    VK_F1,          IDC_TOOLBARHELP,        VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,875,1
+ PRODUCTVERSION 1,0,875,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "March 13, 2006"
+            VALUE "CompanyName", "WholeGroup.com"
+            VALUE "FileDescription", "Audio SixPack"
+            VALUE "FileVersion", "1.0.1.875"
+            VALUE "InternalName", "AudioSixPack.exe"
+            VALUE "LegalCopyright", "(c) WholeGroup.com.  All rights reserved."
+            VALUE "OriginalFilename", "AudioSixPack.exe"
+            VALUE "ProductName", "Audio SixPack"
+            VALUE "ProductVersion", "1.0.1.875"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Audio SixPack"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Audio SixPack"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_TOOLBARNEW          "New compilation"
+    IDC_TOOLBARGRAB         "CD-Audio &ripping"
+    IDC_TOOLBARDELETEGROUP  "Delete group"
+    IDC_TOOLBARBURN         "Burning DVD-Audio"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\DVD-Audio.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

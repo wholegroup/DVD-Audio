@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="WindowName" value="Main">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Introduction">
+		<param name="WindowName" value="Main">
+		<param name="New" value="1">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="About Audio SixPack">
+			<param name="Local" value="about.htm">
+			<param name="WindowName" value="Main">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="System Requirements">
+			<param name="Local" value="system_requirements.htm">
+			<param name="WindowName" value="Main">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Software license">
+			<param name="Local" value="license.htm">
+			<param name="WindowName" value="Main">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="How to...">
+		<param name="WindowName" value="Main">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="How to install">
+			<param name="Local" value="how_to_install.htm">
+			<param name="WindowName" value="Main">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="How to uninstall">
+			<param name="Local" value="how_to_uninstall.htm">
+			<param name="WindowName" value="Main">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Main window">
+			<param name="Local" value="main_window.htm">
+			<param name="WindowName" value="Main">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CD-Audio ripping">
+			<param name="Local" value="ripping.htm">
+			<param name="WindowName" value="Main">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Write DVD-Audio">
+			<param name="Local" value="burning.htm">
+			<param name="WindowName" value="Main">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

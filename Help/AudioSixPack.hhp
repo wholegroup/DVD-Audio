@@ -1,0 +1,17 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=AudioSixPack.chm
+Contents file=Table of Contents.hhc
+Default Window=Main
+Default topic=about.htm
+Display compile progress=No
+Full-text search=Yes
+Language=0x419 Русский
+Title=Audio SixPack HELP
+
+[WINDOWS]
+Main=,"Table of Contents.hhc",,"about.htm","about.htm",,,,,0x42520,,0x304e,,0x1020000,,,,,,0
+
+
+[INFOTYPES]
+

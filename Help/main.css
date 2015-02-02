@@ -1,0 +1,73 @@
+body
+{
+	background-color: #0C9DE2; 
+	margin: 0px;
+}
+
+.part
+{
+	font-size: 16pt;
+	font-family: Arial;
+	font-weight: bold;
+	text-align: left;
+	color: #FDF430;
+}
+
+.copyright
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	font-weight: bold;
+	color: #1A499B;
+}
+
+.maintext
+{
+	font-size: 10pt;
+	font-family: Verdana;
+	text-align: justify;
+	color: #284393;
+}
+.mainhead
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #082373;
+}
+
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+.mainref
+{
+	font-size: 10pt;
+	font-family: Verdana;
+	font-weight: bold;
+	color: blue;
+}
+
+.question
+{
+	font-family: Tahoma;
+	font-weight: bold; 
+	background: #0C9DE2; 
+	font-size: 10pt;
+}
+
+.answer
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+	color: #284393;
+	margin-top: 5pt;
+	margin-left: 20pt;
+	margin-bottom: 10pt;
+	text-align: justify;
+}

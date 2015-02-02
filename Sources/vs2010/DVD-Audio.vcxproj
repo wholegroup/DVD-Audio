@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8994567C-4B53-495A-9961-76E293F0AA62}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\StarBurn\StarBurnD.lib;..\StarBurn\StarCode.lib;..\StarBurn\StarLink.lib;..\StarBurn\StarWave.lib;Winmm.lib;Htmlhelp.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\StarBurn\StarBurn.lib;..\StarBurn\StarCode.lib;..\StarBurn\StarLink.lib;..\StarBurn\StarWave.lib;Htmlhelp.Lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\About.cpp" />
+    <ClCompile Include="..\BurnDVDA.cpp" />
+    <ClCompile Include="..\otherlib\CDAudio.cpp" />
+    <ClCompile Include="..\otherlib\CDVDAudio.cpp" />
+    <ClCompile Include="..\DVD-Audio.cpp" />
+    <ClCompile Include="..\GrabAudio.cpp" />
+    <ClCompile Include="..\GrabProgress.cpp" />
+    <ClCompile Include="..\MainFrm.cpp" />
+    <ClCompile Include="..\otherlib\md5.cpp" />
+    <ClCompile Include="..\SixCDonDVD.cpp" />
+    <ClCompile Include="..\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\otherlib\WGButton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\About.h" />
+    <ClInclude Include="..\BurnDVDA.h" />
+    <ClInclude Include="..\DVD-Audio.h" />
+    <ClInclude Include="..\GrabAudio.h" />
+    <ClInclude Include="..\GrabProgress.h" />
+    <ClInclude Include="..\MainFrm.h" />
+    <ClInclude Include="..\Resource.h" />
+    <ClInclude Include="..\SixCDonDVD.h" />
+    <ClInclude Include="..\stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\toolbar\About.ico" />
+    <None Include="..\res\AudioSixPack_Release.ico" />
+    <None Include="..\res\player\back.ico" />
+    <None Include="..\res\toolbar\Burn.ico" />
+    <None Include="..\res\CD.ico" />
+    <None Include="..\res\toolbar\DeleteGroup.ico" />
+    <None Include="..\res\DVD-Audio.rc2" />
+    <None Include="..\res\DVDR.ico" />
+    <None Include="..\res\player\forward.ico" />
+    <None Include="..\res\toolbar\Grabbing.ico" />
+    <None Include="..\res\toolbar\Help.ico" />
+    <None Include="..\res\music.ico" />
+    <None Include="..\res\toolbar\New.ico" />
+    <None Include="..\res\player\next.ico" />
+    <None Include="..\res\player\open.ico" />
+    <None Include="..\res\player\play.ico" />
+    <None Include="..\res\player\prev.ico" />
+    <None Include="..\res\splash.bmp" />
+    <None Include="..\res\player\stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\res\DVD-Audio.manifest">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\DVD-Audio.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="..\DVD-Audio.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
