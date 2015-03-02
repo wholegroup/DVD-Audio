@@ -94,7 +94,7 @@ Section "Audio SixPack (required)"
 	SetOutPath "$INSTDIR"
 
 	File "Sources\vs2010\Release\DVD-Audio.exe"
-#	File "..\WnASPI32.dll"
+	File "Sources\StarBurn\WnASPI32.dll"
 #	File "..\mfc71.dll"
 #	File "..\mfc71u.dll"
 #	File "..\msvcp71.dll"
